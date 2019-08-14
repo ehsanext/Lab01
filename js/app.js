@@ -2,9 +2,10 @@
 'use strict';
 
 var userFirstName = prompt('Welcome to my about me page. My name is Ehsan. What is your name?');
+console.log('the user name is, ' + userFirstName);
 
-var myColor = prompt('Welcome'+'\xa0'+userFirstName+'\xa0'+'I believe every names are beautiful. Like diffrent colors. \nDo you think my favorite coloe is Green?');
-
+var myColor = prompt('Welcome'+'\xa0'+userFirstName+'\xa0'+'I believe every names are beautiful. Like diffrent colors. \nDo you think my favorite color is Green?');
+console.log('the user answer to color question is, ' + myColor);
 
 if(myColor.toLocaleLowerCase() === 'yes' || myColor.toUpperCase() ===  'YES' || myColor.toLowerCase() === 'y' || myColor.toUpperCase() === 'Y'){
 
@@ -17,7 +18,11 @@ else{
 
 var userAge = prompt('I actually love all colors thought. \nGreat, now let me ask, How old are you?');
 
+console.log('the user is, ' + userAge + 'years old');
+
 var userHappy = prompt('Awesome. You must have enough experince in your '+'\xa0'+ userAge + '\xa0' +'\nI beleive we always should be happy and make people happy. Do you think like me?');
+
+console.log('the user answer to happiness question is, ' + userHappy);
 
 if(userHappy.toLocaleLowerCase() === 'yes' || userHappy.toUpperCase() ===  'YES' || userHappy.toLowerCase() === 'y' || userHappy.toUpperCase() === 'Y' ){
 
@@ -31,9 +36,13 @@ else{
 
 var userFood = prompt('My favorite food is Pizza!. What is yours? ');
 
+console.log('the user favorite foos is, ' + userFood);
+
 alert('Food is fun. Thanks for sharing it with me. I do actually like'+'\xa0'+userFood+'\xa0'+'as well.');
 
 var mySoda = prompt('I love to have Pepsi with my Pizza? Do you like Pepsi?');
+
+console.log('the user answer to soda question is, ' + mySoda);
 
 
 if(mySoda.toLocaleLowerCase() === 'yes' || mySoda.toUpperCase() ===  'YES' || mySoda.toLowerCase() === 'y' || mySoda.toUpperCase() === 'Y' ){
@@ -47,9 +56,11 @@ else{
 
 var myFries = prompt('Wait, I think I can have fries with my Pizza too! Can you eat this much?');
 
+console.log('the user answer to fries question is, ' + myFries);
+
 if(myFries.toLocaleLowerCase() === 'yes' || myFries.toUpperCase() ===  'YES' || myFries.toLowerCase() === 'y' || myFries.toUpperCase() === 'Y' ){
 
-  alert('I was kidding! How you eat fries with you pizza???!!!!');
+  alert('I was kidding! How you can eat fries with your pizza???!!!!');
 }
 else{
 
@@ -57,6 +68,8 @@ else{
 }
 
 var myLife = prompt('Last question. Promise! I think life is short? Do you think like me?');
+
+console.log('the user answer to life question is, ' + myLife);
 
 
 if(myLife.toLocaleLowerCase() === 'yes' || myLife.toUpperCase() ===  'YES' || myLife.toLowerCase() === 'y' || myLife.toUpperCase() === 'Y'){
