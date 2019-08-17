@@ -1,23 +1,48 @@
-body{
-
-
-    background-color: azure;
+header{
+    margin: 100px;
+    text-align: center;
+    font-size: 30px;
 }
 
 
-h1{
+body{
 
-font-size: 25px;
+    background-color: rgb(186, 186, 255);
+}
+
+
+h1, h2, h3{
+
+font-size: 75px;
+text-align: center;
+color: red;
 
 }
 
 ol{
-
-    size: 25px;
+    size: 50px;
+    text-align: center;
+    color: red;
 }
 
+ul{
+    size: 50px;
+    text-align: center;
+    color: blueviolet;
+}
 
-header{
+li{
+font-size: 50px;
 
-    font-size: 30px;
+}
+
+.marginauto {
+    margin: 10px auto 20px;
+    display: block;
+}
+
+footer{
+
+    text-align: center;
+    font-size: 75px;
 }
