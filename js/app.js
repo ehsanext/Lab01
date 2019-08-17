@@ -4,17 +4,15 @@
 var userFirstName = prompt('Welcome to my about me page. My name is Ehsan. What is your name?');
 console.log('the user name is, ' + userFirstName);
 
-var myColor = prompt('Welcome' + '\xa0' + userFirstName + '\xa0' + 'I believe every names are beautiful. Like diffrent colors. \nDo you think my favorite color is Green?');
+var myColor = prompt('Welcome' + ' ' + userFirstName + ' ' + 'I believe every names are beautiful. Like diffrent colors. \nDo you think my favorite color is Green?');
 console.log('the user answer to color question is, ' + myColor);
 
 myColor = myColor.toLowerCase();
 
-if (myColor === 'yes' || myColor.toLowerCase() === 'y') {
+if (myColor === 'yes' || myColor === 'y') {
 
   alert('Yay! You are right! Green is correct!');
-}
-else {
-
+} else {
   alert('Wrong! I love Green but Thank you for your guess! Lol');
 }
 
@@ -22,19 +20,16 @@ var userAge = prompt('I actually love all colors thought. \nGreat, now let me as
 
 console.log('the user is, ' + userAge + 'years old');
 
-var userHappy = prompt('Awesome. You must have enough experince in your ' + '\xa0' + userAge + '\xa0' + '\nI beleive we always should be happy and make people happy. Do you think like me?');
+var userHappy = prompt('Awesome. You must have enough experince in your ' + ' ' + userAge + '.' + '\nI beleive we always should be happy and make people happy. Do you think like me?');
 
 console.log('the user answer to happiness question is, ' + userHappy);
 
-userHappy = userHappy.toLocaleLowerCase();
+userHappy = userHappy.toLowerCase();
 
 if (userHappy === 'yes' || userHappy === 'y') {
 
   alert('You are right! We always should try to make people happy');
-}
-
-else {
-
+} else {
   alert(':( Why?');
 }
 
@@ -42,20 +37,17 @@ var userFood = prompt('My favorite food is Pizza!. What is yours? ');
 
 console.log('the user favorite foos is, ' + userFood);
 
-alert('Food is fun. Thanks for sharing it with me. I do actually like' + '\xa0' + userFood + '\xa0' + 'as well.');
+alert('Food is fun. Thanks for sharing it with me. I do actually like ' + userFood + ' ' + 'as well.');
 
 var mySoda = prompt('I love to have Pepsi with my Pizza? Do you like Pepsi?');
 
 console.log('the user answer to soda question is, ' + mySoda);
 
-mySoda = mySoda.toLocaleLowerCase();
+mySoda = mySoda.toLowerCase();
 
 if (mySoda === 'yes' || mySoda === 'y') {
-
   alert('Yay! Pepsi is great!');
-}
-else {
-
+} else {
   alert('You should think more about it! Lol');
 }
 
@@ -101,23 +93,23 @@ for (var i = 0; i < 4; i++) {
   if (userFavNumber === myFavNumber) {
     alert('Yay! You are right!');
     break;
-  }
-  else if (userFavNumber < myFavNumber) {
+  } else if (userFavNumber < myFavNumber) {
     alert('Too low!');
-  }
-  else if (userFavNumber > myFavNumber) {
+  } else if (userFavNumber > myFavNumber) {
     alert('Too High!');
   }
 }
 
 alert('I\'ve had 125 pizza till yesterday! Lol ');
 
-var myTravelList = ['dubai', 'toronto', 'vancouver', 'cayman Islands', 'montego bay'];
+var myTravelList = ['dubai', 'toronto', 'vancouver', 'cayman islands', 'montego bay'];
 var userScore = 0;
 //var userScore = parseInt(userScore);
 
 for (var j = 0; j < 6; j++) {
-  var userTravelGuess = prompt('What cities you think I\'ve travelled in my life?');
+  var userTravelGuess = prompt('What cities do you think I\'ve travelled in my life?');
+
+  //normalizing the data
   userTravelGuess = userTravelGuess.toLowerCase();
   var isCorrect = false;
 
@@ -130,9 +122,10 @@ for (var j = 0; j < 6; j++) {
   if (isCorrect) {
     alert('You got it!');
     userScore++;
+    break;
   }
   else {
     alert('Lets try it again');
   }
 }
-alert('You score is:'+ '\xa0' + userScore + '\xa0' + 'out of 5');
+alert('You score is: ' + userScore + '\xa0' + 'out of 5');
